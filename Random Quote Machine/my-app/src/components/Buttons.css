@@ -1,0 +1,82 @@
+.buttons-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+i{
+   font-size: 1rem;
+   margin: 0 0.5rem;
+ }
+ p{
+   margin: 0;
+ }
+ a{
+   text-decoration: none;
+   color: white;
+ }
+.button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  width: 10em;
+  padding: 0.6rem 0;
+}
+.button:hover{
+  cursor: pointer;
+}
+#tweet-quote{
+  background-color: #00ACEE;
+  margin-right: 0.5rem;
+}
+#tweet-quote:hover{
+  background-color: #049ad4;
+}
+#new-quote{
+  background-color: #5cb85c;
+}
+#new-quote:hover{
+  background-color: #55a755;
+}
+
+.fadeOut{
+  animation-name: fadeout;
+  animation-duration: 1s;
+}
+@keyframes fadeout{
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.fadeIn{
+  animation-name: fadein;
+  animation-duration: 4s;
+}
+
+@keyframes fadein{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@media screen and (max-width:600px){
+  .buttons-wrapper{
+    display: block;
+  }
+  .button{
+    margin: 0 auto;
+    text-align: center;
+    width: 12rem;
+  }
+  .button p{
+    font-size: 1.1em;
+  }
+  #tweet-quote{
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+  }
+}

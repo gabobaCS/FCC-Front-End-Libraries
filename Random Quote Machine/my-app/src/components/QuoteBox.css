@@ -1,0 +1,45 @@
+#quote-box{
+  background-color: white;
+  width: 30em;
+  padding: 3em;
+  border-radius: 5px;
+  -webkit-box-shadow: 7px 7px 23px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 7px 23px -6px rgba(0,0,0,0.75);
+  box-shadow: 7px 7px 23px -6px rgba(0,0,0,0.75);
+}
+
+
+.quote i{
+  font-size: 3rem;
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  color: rgb(255, 226, 0);
+  text-shadow: 1px 1px 1px #000000;
+}
+#text{
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  color: black;
+  text-align: center;
+}
+
+h3{
+  margin: 2rem 0;
+  text-align: right;
+  font-weight: normal;
+  color: black;
+}
+.bar{
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 2em 0 2em 0;
+}
+
+@media screen and (max-width:600px){
+  #quote-box{
+    width: 15em;
+  }
+}
