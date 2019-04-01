@@ -1,0 +1,33 @@
+.icon{
+  border-radius: 4px;
+  padding: 0.4em;
+  color: white;
+  font-size: 1.5em;
+  margin: 0 0.1rem;
+  width: 0.75em !important
+}
+.icon:hover{
+  background-color: #4f4e4e;
+  cursor: pointer;
+}
+.smaller{
+  font-size: 2rem;
+  padding: 0.4rem 0.4rem;
+}
+.end{
+  display: none;
+}
+.exchange{
+  margin-left: auto;
+  font-size: 2.4rem;
+  color: rgb(3, 139, 0);
+}
+@media screen and (min-width: 767px){
+  .exchange{
+    display: none;
+  }
+  .end{
+    display: inline-block;
+    margin-left: auto;
+  }
+}

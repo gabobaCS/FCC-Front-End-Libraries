@@ -1,0 +1,48 @@
+.Header{
+  height: 3rem;
+  padding: 0 1rem 0 4rem;
+  background-color: #2C2F33;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Editor{
+  height: calc(100vh - 3em);
+}
+.Markdown{
+  height: calc(100vh - 3em);
+  background-color: #f3f3f3;
+  /* display: none; */
+}
+
+@media screen and (min-width: 767px){
+
+  #App{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 3em 1fr;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "header header"
+      "editor markdown";
+  }
+  .Header{
+    grid-area: header;
+    background-color: #2C2F33;
+  }
+  .Editor{
+    grid-area: editor;
+    height: calc(100vh - 3em);
+  }
+  .Markdown{
+    grid-area: markdown;
+    /* display: block; */
+    height: calc(100vh - 3em);
+    background-color: #f3f3f3;
+  }
+
+}
+
+
+
+/* Black: #2C2F33, Grey: #f3f3f3*/
