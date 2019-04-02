@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Pad from './components/Pad';
+import Display from './components/Display';
 import cNote from './components/sounds/c.wav';
 import cSharpNote from './components/sounds/csharp.wav';
 import dNote from './components/sounds/d.wav';
@@ -15,6 +16,17 @@ class App extends Component {
   constructor(props){
     super(props)
 
+    this.state = {
+      currentNote: "Let's  Play"
+    }
+
+    this.updateNote = this.updateNote.bind(this);
+  }
+
+  updateNote(note){
+    this.setState({
+      currentNote: note
+    })
   }
 
 
@@ -42,15 +54,16 @@ class App extends Component {
     return (
       <div className="drum-wrapper">
         <div id="drum-machine">
-          <Pad id="CKey" text="Q" color={purple} glow={purpleGlow} track={cNote}/>
-          <Pad id="DKey" text="W" color={cyan} glow={cyanGlow} track={dNote}/>
-          <Pad id="EKey" text="E" color={blue} glow={blueGlow} track={eNote}/>
-          <Pad id="FKey" text="A" color={sky} glow={skyGlow} track={fNote}/>
-          <Pad id="GKey" text="S" color={green} glow={greenGlow} track={gNote}/>
-          <Pad id="AKey" text="D" color={greenish} glow={greenishGlow} track={aNote}/>
-          <Pad id="BKey" text="Z" color={yellow} glow={yellowGlow} track={bNote}/>
-          <Pad id="C#Key" text="X" color={orange} glow={orangeGlow} track={cSharpNote}/>
-          <Pad id="F#Key" text="C" color={red} glow={redGlow} track={fSharpNote}/>
+          <Display display={this.state.currentNote} />
+          <Pad id="C-Major" text="Q" color={purple} glow={purpleGlow} track={cNote} updateNote={this.updateNote}/>
+          <Pad id="D-Major" text="W" color={cyan} glow={cyanGlow} track={dNote} updateNote={this.updateNote}/>
+          <Pad id="E-Major" text="E" color={blue} glow={blueGlow} track={eNote} updateNote={this.updateNote}/>
+          <Pad id="F-Major" text="A" color={sky} glow={skyGlow} track={fNote} updateNote={this.updateNote}/>
+          <Pad id="G-Major" text="S" color={green} glow={greenGlow} track={gNote} updateNote={this.updateNote}/>
+          <Pad id="A-Major" text="D" color={greenish} glow={greenishGlow} track={aNote} updateNote={this.updateNote}/>
+          <Pad id="B-Major" text="Z" color={yellow} glow={yellowGlow} track={bNote} updateNote={this.updateNote}/>
+          <Pad id="C#-Major" text="X" color={orange} glow={orangeGlow} track={cSharpNote} updateNote={this.updateNote}/>
+          <Pad id="F#-Major" text="C" color={red} glow={redGlow} track={fSharpNote} updateNote={this.updateNote}/>
         </div>
       </div>
 

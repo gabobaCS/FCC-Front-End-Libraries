@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+#display{
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Monoton', sans-serif;
+  font-size: 5rem;
+  position: relative;
+  bottom: 3rem;
+   /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #fff, 0 0 80px #fff, 0 0 100px #fff, 0 0 150px #fff */
+   text-shadow: 0 0 15px #fff, 0 0 15px #fff;
+}

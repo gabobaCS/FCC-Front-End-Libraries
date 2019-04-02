@@ -21,7 +21,7 @@ class Pad extends Component{
       });
       document.getElementById(this.props.text).load();
       document.getElementById(this.props.text).play();
-
+      this.props.updateNote(this.props.id);
     }
   }
 
@@ -35,6 +35,7 @@ class Pad extends Component{
     this.setState({
       animationDisplay: !this.state.animationDisplay
     })
+    this.props.updateNote(this.props.id);
     document.getElementById(this.props.text).load();
     document.getElementById(this.props.text).play();
 
