@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+.drum-pad{
+  height: 3rem;
+  text-align: center;
+  margin-bottom: 3px;
+  line-height: 3rem;
+font-family: 'Roboto', sans-serif;
+  /* font-weight: bold; */
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 0px 4px #ffffff;
+}
+.drum-pad:hover{
+  cursor: pointer;
+}
+.animation{
+  animation: glow 0.2s;
+}
+.newAnimation{
+  animation: newAnimation 0.2s;
+}
+@keyframes glow {
+  from {
+    transform: scaleX(0);
+    opacity: 0.5;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes newAnimation {
+  from {
+    transform: scaleX(0);
+    opacity: 0.5;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
