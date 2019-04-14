@@ -1,0 +1,94 @@
+.calculator{
+  height: 30rem;
+  width: 15rem;
+  border-radius: 30px;
+  background-color: #D4D4D2;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 13rem repeat(5, 1fr);
+  grid-template-areas:
+    'display display display display'
+    'add subtract multiply divide'
+    'seven eight nine equals'
+    'four five six equals'
+    'one two three equals'
+    'decimal zero clear equals';
+}
+
+/* .calculator > div{
+  background-color:#d7d7d7;
+  border: 1px solid rgba(245, 245, 245, 0.09);
+} */
+.calculator > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: 'Open Sans';
+}
+.calculator > div:hover{
+  cursor: pointer;
+}
+#display{
+  /* display: block; */
+  padding: 0 2rem;
+  background-color: black;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  grid-area: display;
+  padding: 0 2rem;
+  overflow-x: auto;
+  justify-content: flex-end;
+  width: 100%;
+  box-sizing: border-box;
+}
+.insideDisplay{
+  color: white;
+  font-size: 2.12rem;
+  font-weight: lighter;
+  overflow-x: auto;
+  padding: 4rem 0;
+  white-space: nowrap;
+  /* direction: rtl; */
+}
+#display:hover{
+  cursor: auto;
+}
+#equals{
+  grid-area: equals;
+  border-bottom-right-radius: 25px;
+  background-color: #FF9500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#add, #subtract, #multiply, #divide{
+  background-color: #c5c5c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+
+@media screen and (min-width: 376px){
+  .calculator{
+    width: 21rem;
+    height: 40rem;
+  }
+  .calculator > div{
+    font-size: 2rem;
+  }
+  #add, #subtract, #multiply, #divide{
+    font-size: 2.5rem;
+  }
+  .insideDisplay{
+    font-size: 2.5rem;
+    padding: 3.6rem 0;
+    overflow-x: auto;
+  }
+}
