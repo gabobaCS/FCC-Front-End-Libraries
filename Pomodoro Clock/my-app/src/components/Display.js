@@ -15,7 +15,6 @@ class Display extends Component{
         </div>
       </React.Fragment>
 
-
     );
   }
 }
