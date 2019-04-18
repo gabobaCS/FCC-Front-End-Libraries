@@ -3,4 +3,7 @@
   background: -webkit-linear-gradient(to bottom left, #F45C43, #EB3349);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom left, #F45C43, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

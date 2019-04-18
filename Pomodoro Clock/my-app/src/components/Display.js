@@ -9,15 +9,10 @@ class Display extends Component{
           <div className="timer">
               <h2>20:00</h2>
           </div>
-
           <svg width="15rem" height="15rem">
               <circle  className="circle" />
-
           </svg>
         </div>
-
-
-
       </React.Fragment>
 
 
