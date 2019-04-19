@@ -23,20 +23,23 @@
 .display svg{
   transform: rotate(-90deg);
 }
+
 .display > svg > circle{
+  --circ: calc(742);
   stroke: white;
   stroke-width: 4;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 250;
+  stroke-dasharray: var(--circ);
+  stroke-dashoffset: 0;
   /* stroke-dashoffset: 300; */
   fill: none;
   cx: 50%;
   cy: 50%;
   r: calc(7.5rem - 2px);
-  animation: stroke 180s linear forwards;
+
 }
 @keyframes stroke {
   to{
-    stroke-dashoffset: 1000;
+    stroke-dashoffset: 742;
+
   }
 }

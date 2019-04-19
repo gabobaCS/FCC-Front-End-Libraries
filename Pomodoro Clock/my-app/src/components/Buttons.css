@@ -1,0 +1,18 @@
+.buttons{
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+.buttons > svg{
+  text-align: center;
+}
+.play{
+  font-size: 4rem;
+  margin: 0 2.5rem;
+}
+.buttons > svg:hover{
+  cursor: pointer;
+}
+.question{
+  font-size: 1.7rem;
+}

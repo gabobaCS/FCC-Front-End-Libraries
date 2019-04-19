@@ -1,0 +1,10 @@
+.menu{
+  color: white;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 2.5rem;
+}
+.menu:hover{
+  cursor: pointer;
+}
