@@ -45,9 +45,27 @@
   cx: 50%;
   cy: 50%;
   r: calc(7.5rem - 2px);
+  /* animation-name: stroke;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards; */
+}
+.animation{
+  animation-name: stroke;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+.animation2{
+  animation-name: stroke2;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
 
 }
 @keyframes stroke {
+  to{
+    stroke-dashoffset: 742;
+  }
+}
+@keyframes stroke2 {
   to{
     stroke-dashoffset: 742;
   }

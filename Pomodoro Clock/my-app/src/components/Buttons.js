@@ -11,7 +11,8 @@ class Buttons extends Component{
 
 
   startTimer(){
-    this.interval = setInterval(() => this.props.handleTimer(this.interval), 1000);
+    console.log('interval',this.interval)
+    this.props.startTimer(this.props.timerStatus, this.props.timerMinutes);
     this.props.handleAnimation();
   }
 
