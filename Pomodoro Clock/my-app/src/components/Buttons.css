@@ -5,10 +5,12 @@
 }
 .buttons > svg{
   text-align: center;
+  -webkit-filter: drop-shadow( 2px 2px 2px rgba(0, 0, 0, .7));
+filter: drop-shadow( 2px 2px 2px rgba(0, 0, 0, .7));
 }
 .play{
   font-size: 4rem;
-  margin: 0 2.5rem;
+  margin: 0 2.2rem 0 2.5rem;
 }
 .buttons > svg:hover{
   cursor: pointer;

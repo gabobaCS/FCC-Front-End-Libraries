@@ -19,6 +19,16 @@
   font-family: 'Roboto Slab', sans-serif;
   font-size: 2.5rem;
   font-weight: normal;
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, .7); */
+  display: inline;
+}
+.timer h3{
+  color: white;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding-bottom: 1rem;
+  font-size: 2rem;
 }
 .display svg{
   transform: rotate(-90deg);
@@ -40,6 +50,5 @@
 @keyframes stroke {
   to{
     stroke-dashoffset: 742;
-
   }
 }
